@@ -4,7 +4,14 @@
     "type": "project",
     "description": "App for managing inventories",
     "authors": [
-    "Harold Juarez <hjuarez20@gmail.com>"
+        {
+            "name": "Harold Juarez",
+            "email": "hjuarez20@gmail.com"
+        },
+       {
+             "name":"Nelson Guadamuz Rodriguez",
+            "email": "nelguaro@gmail.com"
+       }
     ],
     "autoload": {
         "psr-4": { "": "src/" },
