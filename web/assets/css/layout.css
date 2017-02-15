@@ -1,0 +1,30 @@
+.wrapper {
+    float: left;
+    width: 100%;
+    background-color: #DDDDDD;
+}
+.wrapper .head {
+    background-color: #31353E;
+    padding: 20px;
+    width: 100%;
+}
+.wrapper .head .head-title h1 {
+    text-align: center;
+    color: white;
+    font-family: Georgia, serif;
+}
+.wrapper .head .head-notifications {
+    padding-left: 30px;
+}
+.wrapper .container {
+    background-color: #31353E;
+}
+.wrapper .container .container-sidebar {
+    float: left;
+    width: 10%;
+}
+.wrapper .container .container-main {
+    float: right;
+    width: 82%;
+    background-color: #31353E;
+}

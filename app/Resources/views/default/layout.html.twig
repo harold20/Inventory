@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale|split('_')|first|default('en') }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate, nocache" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="generator" content="Inventory App" />
+
+    <title>{% block page_title %}{{ block('content_title')|striptags|raw }}{% endblock %}</title>
+
+    {% block head_stylesheets %}
+        <link rel="stylesheet" href="{{ asset('assets/css/layout.css') }}"/>
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    {% block head_javascript %}
+    {% endblock head_javascript %}
+
+</head>
+<body>
+{% block body %}
+    <div class="wrapper">
+        {% block body_head %}
+            <div class="head">
+                <div class="head-title">
+                    <h1>{% block title %}Inventory App{% endblock title %}</h1>
+                </div>
+                <div class="head-notifications">
+                    {% block body_notification %}
+
+                    {% endblock body_notification %}
+                </div>
+            </div>
+        {% endblock body_head %}
+
+        {% block body_container %}
+            <div class="container">
+                <div class="container-sidebar" >
+                    {% block body_container_sidebar %}
+
+                    {% endblock body_container_sidebar %}
+                </div>
+
+                <div class="container-main">
+                    {% block body_container_main %}
+
+                    {% endblock body_container_main %}
+                </div>
+            </div>
+        {% endblock body_container %}
+    </div>
+    {% block body_javascript %}{% endblock body_javascript %}
+{% endblock body %}
+</body>
+</html>
