@@ -1,30 +1,84 @@
 .wrapper {
-    float: left;
-    width: 100%;
-    background-color: #DDDDDD;
+ width: 100%;
+ background-color: black;
+ float: left;
+ min-height:100%;
+
 }
 .wrapper .head {
-    background-color: #31353E;
-    padding: 20px;
     width: 100%;
+    padding-bottom: 15px;
+
 }
+
+.wrapper .head .head-title {
+    background: blue;
+margin: 0;
+}
+
 .wrapper .head .head-title h1 {
     text-align: center;
     color: white;
     font-family: Georgia, serif;
 }
-.wrapper .head .head-notifications {
-    padding-left: 30px;
+
+.wrapper .head .head-container,
+.wrapper .container{
+    background: pink;
+    word-spacing: -1px;
+    font-size: 10px;
+    letter-spacing: -1px;
+    text-align: center;
 }
+
+.wrapper .head .head-container {
+    padding-bottom: 15px;
+}
+
+.wrapper .head .head-container-menu {
+    width: 65%;
+}
+
+.wrapper .head .head-container-notifications {
+   width: 25%;
+}
+
+.wrapper .head .head-container-user {
+    width: 10%;
+    margin-right: -0.26em;
+}
+
 .wrapper .container {
     background-color: #31353E;
+    padding-bottom: 380px;
 }
-.wrapper .container .container-sidebar {
-    float: left;
-    width: 10%;
+.wrapper .container .container-left {
+    width: 15%;
+
 }
 .wrapper .container .container-main {
-    float: right;
-    width: 82%;
-    background-color: #31353E;
+    width: 85%;
+    margin-right: -0.26em;
+}
+
+.wrapper .footer {
+    background: orangered;
+    height: 60px;
+    width:100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+.block{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+
+}
+
+body
+{
+    background: greenyellow;
+    margin: 0 0 65px;
 }
