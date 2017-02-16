@@ -24,32 +24,50 @@
     <div class="wrapper">
         {% block body_head %}
             <div class="head">
-                <div class="head-title">
+                <div class="p head-title">
                     <h1>{% block title %}Inventory App{% endblock title %}</h1>
                 </div>
-                <div class="head-notifications">
-                    {% block body_notification %}
-
-                    {% endblock body_notification %}
+                <div class="head-container">
+                    <div class="head-container-menu block">
+                        {% block body_menu %}
+                            <h1>Sidebar</h1>
+                        {% endblock body_menu %}
+                    </div>
+                    <div class="head-container-notifications block">
+                        {% block body_notification %}
+                            <h1>Notification</h1>
+                        {% endblock body_notification %}
+                    </div>
+                    <div class="head-container-user block">
+                        {% block body_user %}
+                            <h1>user</h1>
+                        {% endblock body_user %}
+                    </div>
                 </div>
             </div>
         {% endblock body_head %}
 
         {% block body_container %}
             <div class="container">
-                <div class="container-sidebar" >
-                    {% block body_container_sidebar %}
-
-                    {% endblock body_container_sidebar %}
+                <div class="container-left block" >
+                    {% block body_container_left %}
+                        <h1>left</h1>
+                    {% endblock body_container_left %}
                 </div>
 
-                <div class="container-main">
+                <div class="container-main block">
                     {% block body_container_main %}
-
+                        <h1>main</h1>
                     {% endblock body_container_main %}
                 </div>
             </div>
         {% endblock body_container %}
+
+        {% block body_footer %}
+            <div class="footer">
+                <h1>footer</h1>
+            </div>
+        {% endblock body_footer %}
     </div>
     {% block body_javascript %}{% endblock body_javascript %}
 {% endblock body %}
