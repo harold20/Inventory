@@ -15,7 +15,7 @@ $ git clone git@github.com:[your-git-user-here]/Inventory.git
 
 ### Configure a remote fork
 ```
-$ git remote add upstream https://github.com/harold20/Inventory.git
+$ git remote add upstream git@github.com:harold20/Inventory.git
 ```
 
 ### Sync your fork
